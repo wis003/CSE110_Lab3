@@ -1,29 +1,93 @@
 <html>
+    
     <head>
         <title>William's Lab 2 HTML Page</title>
     </head>
+
     <meta charset="utf-8">
-    <!-- <link href="/dummy.css" rel="stylesheet"> -->
+    <link href="/blank.css" rel="stylesheet">
+
     <header>
         <h1>Welcome to my Website!</h1>
     </header>
+
     <body>
         <h2>About Me</h2>
+            <h3>Introduction</h3>
+            <label for="story">My story:</label>
+
+            <textarea id="story" name="story"
+                    rows="5" cols="33">
+            Born and raised in San Diego. Student at UCSD. Studying computer engineering.
+            </textarea>
+
             <h3>Current UCSD Classes</h3>
                 <p> CSE 167, CSE 140/L, CSE 110, ECE 65</p>
+            
+            <h3>Friday Class Schedule</h3>
+                <table>
+                    <caption>It's finally Friday</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col">Class</th>
+                            <th scope="col">Time</th>
+                        </tr>
+                        <tr>
+                            <td>CSE 110</td>
+                            <td>10:00 am</td>
+                        </tr>
+                        <tr>
+                            <td>ECE 65</td>
+                            <td>1:00 pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            <h3>Favorite Games</h3>
+            <table>
+                <caption>Rating out of 10</caption>
+                <colgroup>
+                    <col>
+                    <col span="2" class="one">
+                    <col span="2" class="two">
+                </colgroup>
+                <tr>
+                    <td> </td>
+                    <th scope="col">Celeste</th>
+                    <th scope="col">Witcher 3</th>
+                    <th scope="col">Stardew Valley</th>
+                    <th scope="col">TF2</th>
+                </tr>
+                <tr>
+                    <th scope="row">Rating</th>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+            </table>
+
             <section>
                 <h3>Random Fact</h3>
                 <p>In this section, I will provide a random fact from the internet: <strong>Odontophobia is the fear of teeth.</strong></p>
             </section>
+
             <aside>
                 <p><i>Odonto-</i> is a prefix relating to a tooth or teeth.</p>
             </aside>
+
             <nav>
                 <p>Here are some useful UCSD links using <code>nav</code>:</p>
                 <a href="https://www.ucsd.edu/">UCSD</a> |
                 <a href="https://students.ucsd.edu/my-tritonlink/tools/">TritonLink</a> |
                 <a href="https://cape.ucsd.edu/">CAPE</a> |
             </nav>
+
             <h3>Favorite Subject</h3>
                 <p>There are <b>two</b> subjects I can't decide between:</p>
                 <hr>
@@ -31,6 +95,7 @@
                 <hr>
                 <p><b>Physics</b></p>
                 <hr>
+
             <h3>Favorite Snacks</h3>
                 <ul>
                     <li>Yogurt</li>
@@ -41,6 +106,7 @@
                         </ul>
                     </li>
                 </ul>
+
             <h3>Favorite Desserts</h3>
                 <p>In order:</p>
                     <ol>
@@ -49,23 +115,199 @@
                         <li>Chocolate Chip Cookies</li>
                         <li>Mochi</li>
                     </ol>
+            <h3>Did someone say ice cream?</h3>
+                <p>My favorite flavor is mint. How about you?</p>
+                <label for="ice-cream-choice">Choose a flavor:</label>
+                <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+                <datalist id="ice-cream-flavors">
+                    <option value="Chocolate">
+                    <option value="Coconut">
+                    <option value="Mint">
+                    <option value="Strawberry">
+                    <option value="Vanilla">
+                </datalist>
+
+            <h3>Favorite Food</h3>
+                <p>If I had to choose a food in this list, I would pick tacos. How about you?</p>
+                <label for="food">Choose a food:</label>
+                <select id="food">
+                    <optgroup label="Food">
+                        <option>Tacos</option>
+                        <option>Sushi</option>
+                        <option>Pizza</option>
+                    </optgroup>
+                </select>
+
+                <p>Here is a different format for the same question:</p>
+                <form>
+                    <fieldset>
+                      <legend>Choose your favorite food</legend>
+                  
+                      <input type="radio" id="tacos" name="food">
+                      <label for="tacos">Tacos</label><br/>
+                  
+                      <input type="radio" id="sushi" name="food">
+                      <label for="sushi">Sushi</label><br/>
+                  
+                      <input type="radio" id="pizza" name="food">
+                      <label for="pizza">Pizza</label>
+                    </fieldset>
+                </form>
+
             <h3>Current Setup</h3>
                 <figure>
-                    <img src="images/setup.jpg"
+                    <img src="/images/setup.jpg"
                         alt="setup">
                     <figcaption>Just got a new monitor!</figcaption>
                 </figure>
+
             <h3>My Roommate</h3>
                 <p><pre>Sometimes my roommate has to say<br>
                     <em>WILLIAM</em> really loudly to<br>
                     catch my            attention<br>
                     because I'm always wearing headphones.</pre></p>
+
+            <h3>Favorite Twitch Emote</h3>
+                <picture>
+                <img src="/images/okayge_teatime.jpg"
+                    alt="Okayge Teatime">
+                </picture>
+
+                <details>
+                    <summary>Click me</summary>
+                    Nice.
+                </details>
+
+            <h3>Muir College</h3>
+                <p>Here is an embedded iframe of my college:</p>
+                <iframe id="muir"
+                    title="Muir College"
+                    width="300"
+                    height="200"
+                    src="https://www.openstreetmap.org/export#map=18/32.87826/-117.24357">
+                </iframe>
+
+            <h3>Favorite Animal</h3>
+                <figure>
+                    <figcaption>You can listen to my favorite animal, the lion:</figcaption>
+                    <audio
+                        controls
+                        src="/sounds/lion.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                    </audio>
+                </figure>
+
+            <h3>Favorite Sport</h3>
+                <video controls width="720">
+                    <source src="/videos/kawhi.mp4"
+                            type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+
+            <h3>Favorite Color</h3>
+                <p>My favorite color is red.</p>
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid #ff0000;">
+                    Your browser does not support the HTML canvas tag.
+                </canvas>
+                <p>My favorite color to pair with red is black.</p>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40"
+                    stroke="red" stroke-width="4" fill="black" />
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+
+            <h3>More Information</h3>
+                <p>Let me know what else you would like to know about me:</p>
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" value="Bob"><br>
+                    <label for="info">What would you like to know?:</label><br>
+                    <input type="text" id="info" name="info" value="This is an example.">
+                </form>
+            
+            <h3>Input Form</h3>
+                <p>I would like to get to know you more. Here is a form for you.</p>
+                <ol>
+                    <li><p>Would you rather have scales or horns or both?</p>
+                        <div>
+                          <input type="checkbox" id="scales" name="scales"
+                                 checked>
+                          <label for="scales">Scales</label>
+                        </div>
+                        
+                        <div>
+                          <input type="checkbox" id="horns" name="horns">
+                          <label for="horns">Horns</label>
+                        </div></li>
+
+                    <li><p>Blue or red?</p>
+                        <div>
+                            <input type="color" id="red" name="red"
+                                   value="#ff0000">
+                            <label for="red">Red</label>
+                        </div>
+                        
+                        <div>
+                            <input type="color" id="blue" name="blue"
+                                    value="#0000ff">
+                            <label for="blue">Blue</label>
+                        </div></li>
+
+                    <li><label for="today">Today's date:</label>
+
+                        <input type="date" id="today" name="today"
+                               value="2021-01-15"></li>
+
+                    <li><label for="email">Enter your @ucsd.edu email:</label>
+                        <input type="email" id="email"
+                               pattern=".+@ucsd.edu" size="30" required></li>
+
+                    <li><label for="name">User name (4 to 8 characters):</label>
+
+                        <input type="text" id="name" name="name" required
+                               minlength="4" maxlength="8" size="10"></li>
+
+                    
+
+                    <li><label for="url">Enter an https:// URL:</label>
+
+                        <input type="url" name="url" id="url"
+                               placeholder="https://example.com"
+                               pattern="https://.*" size="30"
+                               required></li>
+                    
+                    <li><div>
+                    <label for="pass">Password (8 characters minimum):</label>
+                    <input type="password" id="pass" name="password"
+                            minlength="8" required>
+                    </div></li>
+
+                    <li>Push this button for fun: <input type="button" value="PUSH ME"></li>
+
+                    <li><input type="reset" value="Reset"></li>
+
+                    <li><input type="submit" value="Submit"></li>
+                </ol>
+
+                <h3>Did you like my website?</h3>
+                <button type="button">
+                    Yes
+                </button>
+
     </body>
 
     <div>
         <h2>Other</h2>
         <p>The <code>div</code> tag has no effect unless styled using CSS. I will place it here as a test.</p>
         <p>Similarly, the <span><code>span</code> tag</span> behaves like the div tag except for inline elements.</p>
+
+        <p>Template test:</p>
+            <div id="container"></div>
+            <template id="template">
+            <div>Click me</div>
+            </template>
     </div>
 
     <footer>
