@@ -1,1 +1,48 @@
+.center {
+    text-align: center;
+    color: red;
+}
 
+#story {
+    background-color: magenta;
+}
+
+div * {
+    background-color: green;
+}
+
+p {
+    color: black;
+}
+
+a[href="mailto:wis003@ucsd.edu"] {
+    background-color: silver;
+}
+
+details::after {
+    content: " - CSS pseudo-class selectors are cool!"
+}
+
+title, h1 {
+    background-color: white;
+}
+
+p code {
+    background-color: yellow;
+}
+
+footer > p {
+    background-color: red;
+}
+
+div ~ p {
+    color: pink;
+}
+
+h2 + p {
+    background-color: purple;
+}
+
+p.goodbye {
+    background-color: orange;
+}
