@@ -45,7 +45,7 @@ footer > p {
 }
 
 div ~ p {
-    color: pink;
+    color: black;
 }
 
 h2 + p {
