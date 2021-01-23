@@ -1,18 +1,27 @@
+/* CSS formatting for index.html */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 .center {
     text-align: center;
-    color: red;
+    color: #ff0000;
 }
 
 #story {
-    background-color: magenta;
+    background-color: white;
+    color: magenta;
+    text-decoration: underline;
+    text-align: center;
 }
 
 div * {
-    background-color: green;
+    background-color: hsla(120,100%,50%,0.5);
 }
 
 p {
-    color: black;
+    color: #000;
 }
 
 a[href="mailto:wis003@ucsd.edu"] {
@@ -24,15 +33,15 @@ details::after {
 }
 
 title, h1 {
-    background-color: white;
+    background-color: rgb(255,255,255);
 }
 
 p code {
-    background-color: yellow;
+    background-color: rgba(255,255,0,0.5);
 }
 
 footer > p {
-    background-color: red;
+    background-color: hsl(0, 100%, 50%);
 }
 
 div ~ p {
@@ -45,4 +54,65 @@ h2 + p {
 
 p.goodbye {
     background-color: orange;
+}
+
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }

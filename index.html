@@ -8,12 +8,29 @@
 
         <style>
             body {
-              background-color: mintcream;
+              background-color: lightgray;
+            }
+
+            @media only screen and (max-width: 600px) {
+                body {
+                    background-color: lightblue;
+                }
             }
             
             h1 {
               color: navy;
               margin-left: auto;
+              border-style: solid;
+              border-color: black;
+              border-width: thick;
+            }
+
+            #rcorners {
+                border-radius: 25px;
+                background: #73AD21;
+                padding: 20px;
+                width: 200px;
+                height: 150px;
             }
         </style>
     </head>
@@ -32,8 +49,27 @@
             Born and raised in San Diego. Student at UCSD. Studying computer engineering.
             </textarea>
 
+            <div style="background-color: white; width: 300px; border: 15px solid green; 
+            padding: 50px 50px 50px 50px; margin: 20px 20px 20px 20px;">Short Margins, Short Padding</div>
+            
+            <div style="background-color: white; width: 300px; border: 15px solid red; 
+            padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px; 
+            margin-top: 20px; margin-bottom: 20px; margin-right: 20px; margin-left: 20px;">Long Margins, Long Padding</div>
+
+            <div style="background-color: white; width: 300px; border: 15px solid blue; 
+            padding: 50px 50px 50px 50px; margin: auto;">Auto Margins, Short Padding</div>
+
             <h3>Current UCSD Classes</h3>
-                <p> CSE 167, CSE 140/L, CSE 110, ECE 65</p>
+                <div id="rcorners">CSE 167, CSE 140/L, CSE 110, ECE 65</div>
+
+            <h3>Classes I Want to Take</h3>
+            <p style="font-size: 1cm;">CSE 169</p>
+            <p style="font-size: 15mm;">CSE 135</p>
+            <p style="font-size: 0.2in;">ECE 111</p>
+            <p style="font-size: 1.5em;">PHYS 2D</p>
+            <p style="font-size: 1vh;">CSE 120</p>
+            <p style="font-size: 175%;">CSE 141</p>
+
             
             <h3>Friday Class Schedule</h3>
                 <table>
@@ -85,18 +121,18 @@
 
             <section>
                 <h3>Random Fact</h3>
-                <p>In this section, I will provide a random fact from the internet: <strong>Odontophobia is the fear of teeth.</strong></p>
+                <p style="display: none;">In this section, I will provide a random fact from the internet: <strong>Odontophobia is the fear of teeth.</strong></p>
             </section>
 
             <aside>
-                <p><i>Odonto-</i> is a prefix relating to a tooth or teeth.</p>
+                <p style="display: inline;"><i>Odonto-</i> is a prefix relating to a tooth or teeth.</p>
             </aside>
 
             <nav>
                 <p>Here are some useful UCSD links using <code>nav</code>:</p>
-                <a href="https://www.ucsd.edu/">UCSD</a> |
-                <a href="https://students.ucsd.edu/my-tritonlink/tools/">TritonLink</a> |
-                <a href="https://cape.ucsd.edu/">CAPE</a> |
+                <p><b><a href="https://www.ucsd.edu/" target="_blank">UCSD</a></b></p>> |
+                <p><b><a href="https://students.ucsd.edu/my-tritonlink/tools/" target="_blank">TritonLink</a></b></p>> |
+                <p><b><a href="https://cape.ucsd.edu/" target="_blank">CAPE</a></b></p>> |
             </nav>
 
             <h3>Favorite Subject</h3>
@@ -151,6 +187,13 @@
                 </select>
 
                 <p>Here is a different format for the same question:</p>
+
+                <div class="flex-container">
+                    <div>Tacos</div>
+                    <div>Sushi</div>
+                    <div>Pizza</div>  
+                </div>
+
                 <form>
                     <fieldset>
                       <legend>Choose your favorite food</legend>
@@ -224,6 +267,17 @@
                     <circle cx="50" cy="50" r="40"
                     stroke="red" stroke-width="4" fill="black" />
                 </svg>
+
+            <h3>Favorite Poem</h3>
+            <p style="max-width: 50%;"> Max-Width: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, 
+                at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. 
+                Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Pellentesque interdum, 
+                nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat.</p>
+
+            <p style="min-width: 80%;"> Min-Width: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, 
+                at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. 
+                Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Pellentesque interdum, 
+                nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat.</p>
 
             <h3>More Information</h3>
                 <p>Let me know what else you would like to know about me:</p>
@@ -302,6 +356,26 @@
                 <button type="button">
                     Yes
                 </button>
+    
+    <h3>Tic Tac Toe</h3>
+    <div class="grid-container">
+        <div class="grid-item">X</div>
+        <div class="grid-item">X</div>
+        <div class="grid-item">O</div>  
+        <div class="grid-item">X</div>
+        <div class="grid-item">O</div>
+        <div class="grid-item">X</div>  
+        <div class="grid-item">O</div>
+        <div class="grid-item">X</div>
+        <div class="grid-item">O</div>  
+    </div>
+
+    <h3>Random</h3>
+    <div class="static">
+        C++ is cool!
+        <div class="absolute">Python too :)</div>
+    </div>
+
     <div>
         <h2 style="color:maroon;">Other</h2>
         <p>The <code>div</code> tag has no effect unless styled using CSS. I will place it here as a test.</p>
